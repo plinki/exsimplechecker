@@ -4,8 +4,6 @@ defmodule Exsimplecheck do
       bytes_count
       |> :crypto.strong_rand_bytes()
       |> Base.url_encode64(padding: false)
-
-    user
   end
 
   def get(user) do
